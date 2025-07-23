@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: maintenance-backend
+    restart: always
+    ports:
+      - "5000:5000"
